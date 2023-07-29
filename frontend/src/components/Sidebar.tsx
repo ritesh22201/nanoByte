@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaPlus } from 'react-icons/fa';
 import { BsPlus } from 'react-icons/bs';
 
 const Sidebar = () => {
