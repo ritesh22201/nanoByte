@@ -4,9 +4,9 @@ import Main from '../components/Main'
 
 function Interview() {
   return (
-    <div className='flex relative' style={{height : '89vh'}}>
-      <Sidebar/>
-      <Main/>
+    <div className='flex relative' style={{ height: '89vh' }}>
+      <Sidebar />
+      <Main />
     </div>
   )
 }
