@@ -1,13 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
 function Home() {
     const navigate = useNavigate();
-
     return (
         <div className="px-4">
             <div className="flex flex-col-reverse md:flex-row  md:space-x-20">
                 <div className="flex-1 flex flex-col justify-center md:pl-8">
+
                     <div className="text-4xl font-bold"> Practice Smarter, Interview Better</div>
                     <div className="text-xl"> Interview Excellence, Empowered by AI Technology</div>
                     <button
@@ -27,7 +26,7 @@ function Home() {
                 </div>
             </div>
 
-        
+
 
 
             <div className="mt-10">
