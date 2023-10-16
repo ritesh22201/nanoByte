@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
-
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
-
-  const tabIndexValue = -1;
 
   return <nav className="bg-gray-800">
     <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -30,12 +27,9 @@ const Navbar = () => {
           <div className="flex flex-shrink-0 items-center">
             <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company" />
           </div>
-
           <div className="hidden sm:ml-6 sm:block">
-            <div className='font-bold text-white'>Intro AI</div>
-            {/* <div className="flex space-x-4">
-
-
+            <div className='font-bold text-white'>NanoByte</div>
+          </div>
         </div>
         <div className="absolute inset-y-0 right-0 flex gap-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
           <button type="button" className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
@@ -53,7 +47,7 @@ const Navbar = () => {
                 <button onMouseEnter={() => setIsOpen(true)} type="button" className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                   <span className="absolute -inset-1.5"></span>
                   <span className="sr-only">Open user menu</span>
-                  <img className="h-8 w-8 rounded-full" src={isAuthenticated ? `${user?.picture}` : ""} alt="df" />
+                  <img className="h-8 w-8 rounded-full" src={isAuthenticated ? `${user?.picture}` : ""} alt="logo" />
                 </button>
               </div>
               {isOpen && (
@@ -101,5 +95,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-

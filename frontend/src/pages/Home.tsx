@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from "../components/Footer"
 function Home() {
     const navigate = useNavigate();
     return (
@@ -42,6 +43,7 @@ function Home() {
                     <li>Finally, remember to relax and be yourself during the interview. Your personality and enthusiasm can also make a positive impression on the interviewer. Good luck!</li>
                 </ul>
             </div>
+            <Footer />
         </div>
     );
 }
